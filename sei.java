@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//soma ou subtração
 public class sei{
     public static void main(String[]args){
         Scanner sc= new Scanner(System.in);

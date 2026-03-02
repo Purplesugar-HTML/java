@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//saudação por nome
 public class at1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,4 +1,5 @@
 import java.time.localtime;
+//saudação por horário
 public class is{
     public static void main(String[] args) {
      int hora = localtime.now().gethour();

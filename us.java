@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.time.localtime;
 import java.time.period;
+//verificar idades
 public class us{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);

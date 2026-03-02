@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//maior e menor número
 public class es{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
