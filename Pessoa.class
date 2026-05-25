@@ -1,0 +1,20 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+class Pessoa {
+   protected String nome;
+   protected String fone;
+   protected String cpf;
+
+   public Pessoa(String var1, String var2, String var3) {
+      this.nome = var1;
+      this.fone = var2;
+      this.cpf = var3;
+   }
+
+   public void darAula() {
+      System.out.println(this.nome + " está dando aula");
+   }
+
+   public void apresentacao() {
+      System.out.println("Sou " + this.nome + ", CPF: " + this.cpf);
+   }
+}

@@ -1,0 +1,76 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+
+      try {
+         System.out.println("=== Cadastro do Aluno ===");
+         System.out.print("Nome: ");
+         String var2 = var1.nextLine();
+         System.out.print("Telefone: ");
+         String var3 = var1.nextLine();
+         System.out.print("CPF: ");
+         String var4 = var1.nextLine();
+         System.out.print("Matrícula: ");
+         String var5 = var1.nextLine();
+         Aluno var6 = new Aluno(var2, var3, var4, var5);
+         var6.saudacao();
+         var6.aprende();
+         var6.apresentacao();
+         System.out.println("\n=== Cadastro do Professor ===");
+         System.out.print("Nome: ");
+         String var7 = var1.nextLine();
+         System.out.print("Telefone: ");
+         String var8 = var1.nextLine();
+         System.out.print("CPF: ");
+         String var9 = var1.nextLine();
+         System.out.print("Matrícula: ");
+         String var10 = var1.nextLine();
+         System.out.print("Título: ");
+         String var11 = var1.nextLine();
+         Professor var12 = new Professor(var7, var8, var9, var10, var11);
+         var12.darAula();
+         var12.ensina();
+         System.out.println("Título: " + var12.getTitulo());
+         System.out.println("\n=== Cadastro do Funcionário ===");
+         System.out.print("Nome: ");
+         String var13 = var1.nextLine();
+         System.out.print("Telefone: ");
+         String var14 = var1.nextLine();
+         System.out.print("CPF: ");
+         String var15 = var1.nextLine();
+         System.out.print("Código: ");
+         String var16 = var1.nextLine();
+         System.out.print("Função: ");
+         String var17 = var1.nextLine();
+         Funcionario var18 = new Funcionario(var13, var14, var15, var16, var17);
+         var18.desempenhaFuncao();
+         System.out.println("\n=== Cadastro do Responsável ===");
+         System.out.print("Nome: ");
+         String var19 = var1.nextLine();
+         System.out.print("Telefone: ");
+         String var20 = var1.nextLine();
+         System.out.print("CPF: ");
+         String var21 = var1.nextLine();
+         Aluno[] var22 = new Aluno[]{var6};
+         Responsavel var23 = new Responsavel(var19, var20, var21, var22);
+         String var10001 = var23.nome;
+         System.out.println("Responsável: " + var10001 + " tem " + var23.getAluno().length + " aluno(s)");
+      } catch (Throwable var25) {
+         try {
+            var1.close();
+         } catch (Throwable var24) {
+            var25.addSuppressed(var24);
+         }
+
+         throw var25;
+      }
+
+      var1.close();
+   }
+}
